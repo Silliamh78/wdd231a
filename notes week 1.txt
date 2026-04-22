@@ -1,0 +1,10 @@
+do npm run preview to make sure it looks right before you submit it
+use npm run start to run the site
+
+Code (I probably can't access it yet so I'll put the code here);
+
+use flex or grid
+
+flex for the first and grid for the second in example solution
+
+start building just html

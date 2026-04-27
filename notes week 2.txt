@@ -1,0 +1,33 @@
+In-Class Notes;
+
+flex or grid would both work for the menu. we will probably use flex
+
+there's two things in each container; the icon
+
+we will start with a list for our menu
+
+ul= unordered list
+
+if you just put the item next to the word, it will be inline
+
+we need to put the icon on a new line, we can use block containers to do that
+
+we can put them in paragraphs!
+
+an svg is a file that has directions on how to draw a logo/picture
+
+use <svg> instead of <img>
+
+prettier- extension that formats code (option + shift + s)
+
+you can google for specific html symbols
+
+&copy; 2026 WDD 231 Sample Project
+
+STYLE SHEETS;
+
+define root variables
+
+you can define variables for things like color so you don't have to keep putting in the number
+
+:root{

@@ -15,4 +15,13 @@ body{
 #content{
     max-width: 1024px;
     background-color: white;
+    margin: 0 auto;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--header-footer-color);
+    color: white;
+}
+

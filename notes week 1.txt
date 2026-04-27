@@ -1,4 +1,40 @@
-do npm run preview to make sure it looks right before you submit it
+Unit 1 Readings, Additional studying notes;
+Source: Copilot
+CSS Selectors "select" or "separate" individual sections of html code in order to more easily isolate it when it is time to style it.
+for example, you could use a div and label it in order to make every piece of html text under that label a certain color or font size.
+Combinators are used when you want to take two selectors and give them a style defined by their relationship to each other.
+A child selector, for example, is a combinator that will select all elements that are descended from a specific element in the html.
+For example; all elements that are inside divs.
+
+A pseudo class adds additional paramaters to the style of a class that cannot be expressed simply through default selectors. this may be what we use to, for example, have an option for hovering over an element on the site.
+
+Java Script Variables; let a=x
+the let format is ideal especially when variables may change later!
+
+the const format seems to be for when variables will not change
+
+Variables need to be declared before usage so the program knows how much space to prepare for the variable, how it will be interpreted, and how long it needs to remember it for.
+
+Primitive data types cannot be changed. This may be just straight up text or set in stone numbers, or stating whether an element's condition is true or false.
+
+Literals, however, are more flexible data types enclosed by (`), including variables that can be changed over time.
+
+Arrays are used to store lists in javascript! ex: let list1= []
+
+DOM (Document Object Model);
+
+A DOM takes a document and processes it in a text based way that vs code can read. This allows javascript to make edits and changes to a site by essentially converting it from html to javascript. You can also use document.createElement() to add content to the DOM, remove() to remove them, or element.removeAttribute(atrributename) to remove an attribute from an element in the DOM.
+
+element.innerHTML and element.insertAdjacentHTML() are both used to insert html through the DOM. However, element.innerHTML is used to put html inside of an already existing element, whereas element.insertAdjacentHTML() is used to add content around the element without actually replacing the already existing html content.
+
+
+I looked through the sources the AI provides to double check the info they provided; here's one site that was used;
+
+https://www.geeksforgeeks.org/javascript/difference-between-var-let-and-const-keywords-in-javascript/
+
+w3 schools was also frequently referenced! This is a site our university uses so I felt comfortable trusting the information from it.
+
+In Class Notes; do npm run preview to make sure it looks right before you submit it
 use npm run start to run the site
 
 Code (I probably can't access it yet so I'll put the code here);
@@ -8,3 +44,7 @@ use flex or grid
 flex for the first and grid for the second in example solution
 
 start building just html
+
+<div id= "content">
+<h1
+

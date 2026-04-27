@@ -31,3 +31,17 @@ define root variables
 you can define variables for things like color so you don't have to keep putting in the number
 
 :root{
+
+Normalization using star selector (star means all things)
+
+content is an id so we use the #
+
+if it was a class we would use .
+
+JAVA SCRIPT;
+
+<script type="module" src="js/main.js" defer></script> loads the javascript (defer prevents the javascript from running at the top, before the page is ready for it.)
+
+in .innerHTML you can format with tags, but with .textContent you cannot
+
+.src should work by itself, since it will be connected to the head section of the line

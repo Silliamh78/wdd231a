@@ -25,6 +25,8 @@ header{
     color: white;
 }
 
+#park-name {margin-top: -140px;}
+
 #park-menu{
   display: flex;
   flex-direction: row;

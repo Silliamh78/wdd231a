@@ -25,7 +25,21 @@ header{
     color: white;
 }
 
-#park-name {margin-top: -140px;}
+#park-name {
+    font-size: 20px;
+    border: 2px;
+    background-color: var(--background-color);
+    opacity: 70%;
+    margin-top: -140px;
+}
+
+#park-type{
+    font-size: 40px;
+}
+
+#park-states{
+    font-size: 40px;
+}
 
 #park-menu{
   display: flex;

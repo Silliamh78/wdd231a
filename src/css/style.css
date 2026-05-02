@@ -26,6 +26,6 @@ header{
 }
 
 .parkMenu{
-    display: flex;
+     flex-direction: row | row-reverse | column | column-reverse;
 
 }

@@ -25,7 +25,7 @@ header{
     color: white;
 }
 
-.parkMenu{
-     flex-direction: row | row-reverse | column | column-reverse;
-
+.parkMenu {
+  display: flex;           
+  flex-direction: row;
 }

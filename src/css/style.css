@@ -25,3 +25,7 @@ header{
     color: white;
 }
 
+.parkMenu{
+    display: flex;
+
+}

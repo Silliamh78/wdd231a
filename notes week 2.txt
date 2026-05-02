@@ -45,3 +45,5 @@ JAVA SCRIPT;
 in .innerHTML you can format with tags, but with .textContent you cannot
 
 .src should work by itself, since it will be connected to the head section of the line
+
+when you give a ____, it's expecting a function as the second parameter

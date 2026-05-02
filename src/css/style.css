@@ -26,6 +26,6 @@ header{
 }
 
 .parkMenu {
-  display: flex;           
+  display: flex;
   flex-direction: row;
 }

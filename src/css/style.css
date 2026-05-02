@@ -28,7 +28,7 @@ header{
 #park-name {
     font-size: 20px;
     border: 2px;
-    background-color: var(--background-color);
+    background-color: var(--accent-color);
     opacity: 70%;
     margin-top: -140px;
 }

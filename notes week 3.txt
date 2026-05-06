@@ -1,0 +1,87 @@
+we're putting it all together in this class! (css, html, js, etc)
+
+SHOWING & HIDING
+
+ways to show and hide on screen w/ css
+display: none
+if you add display none, the component essentially doesn't exist (even though there is still a tag for it)
+visibility: hidden
+it is still there but you can't see it! (and it still takes up space on the screen)
+opacity: 0
+similar to visibility: hidden
+
+using visibility hidden will keep the format !
+
+display: none is for menus!!
+
+think about what is behind your element when selecting opacity
+
+with display: none;
+
+access direct box with getElementById
+
+Add listeners to each button to change their value
+
+display: block puts it back
+
+HOW TO USE JAVASCRIPT TO ACTIVATE CSS CLASSES so it doesn't disrupt the format of the page:
+
+classBox
+classBox.classList.add("hidden")
+classList is automatically available for EVERY dominate object
+
+Toggle means add or remove (if the class is already there it removes it, if it's not, it adds it.)
+
+Toggle .hiddle
+
+.is-hidden display:none
+
+z-index has higher playing field than background
+
+#header-menu-option{
+position: absolute;
+top: 100%;
+right:0;
+z-index:10;
+background-color: var(--header-color);
+}
+
+WAYS TO MAKE DECISIONS IN JAVASCRIPT:
+
+if statements:
+
+you have to use else/if to check next thing
+ex: if 50 then cold
+
+if (temperature > 85)
+
+switch statements:
+
+switch(park) 
+
+this is if you don't want a big if statement, you just want different outputs
+
+break in a switch statement ends each individual portion of the statement, it sets them apart
+
+ternary operators:
+((Boolean Operators:
+park is either open or closed
+function updateOPenMessage(){
+const isOpen=isOpenCheckbox.checked; const message=isOpen ? "park is open!" : "park is closed!"))
+
+conditional rendering:
+puts it all together
+its all conditional fr fr
+using logic to show whether something is displayed
+
+function 
+
+
+CREATE NEW WEBPAGE (public examples or public scratch folder)
+create div under checkbox to display message
+
+Hi I don't understand. I was trying very hard to pay attention today but my knowledge of JavaScript is not very strong so I kept getting lost, and then getting distracted aaaaaaaaaaaaah
+
+MODAL
+
+A modal forces you to pay attention, and you have to close it. like a pop up, or alert that covers the whole screen. you can usually dismiss it with an x. esc or clikcing outside the modal also usually works. This was all new knowledge for me! I've seen modals before but never knew what they were called. You structure a modal with a header, a main section that features the content of the page. There's a div for the modal itself, which fills the whole screen, inside of the div is the box. we set all the stylization stuff in styles using the tag on the html index. when an overlay is hidden so is the child. These are the main things I learned from the lecture/experimenting with the format/the reading. This is really cool because it's another way of organizing and prioritizing information on your site. Opening a modal can communicate what the most important thing for a user to see when they open the site may be, or be good for advertising new features!

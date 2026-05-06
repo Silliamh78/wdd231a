@@ -46,6 +46,10 @@ function addEventListeners() {
   }
 }
 
+// function updateOPenMessage(){
+// const isOpen=isOpenCheckbox.checked; 
+// const message=isOpen ? "park is open!" : "park is closed!";
+// }
 
 loadParkData();
 addEventListeners();

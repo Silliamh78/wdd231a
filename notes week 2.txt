@@ -1,3 +1,6 @@
+Notes;
+I learned 
+
 In-Class Notes;
 
 flex or grid would both work for the menu. we will probably use flex

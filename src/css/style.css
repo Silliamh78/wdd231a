@@ -60,11 +60,6 @@ footer {
   display: none;
 }
 
-#header-menu-options {
-  position: absolute; /* optional if your layout needs it */
-  z-index: 10;
-  background-color: var(--header-color);
-}
 
 #header-menu-options ul {
   list-style: none;
@@ -84,4 +79,29 @@ footer {
 
 #overview.overlay-hover {
   background-color: var(--background-color);
+}
+
+#header-menu-options{
+position: absolute;
+top: 100%;
+right:0;
+z-index:10;
+background-color: var(--header-color);
+}
+
+.modal-overlay {
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+}
+
+.modal_show{
+  opacity: 1;
+}
+
+.modal{
+  width: min(500px, 100%);
+  background: white;
+  border-radius: 12px;
 }

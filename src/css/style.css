@@ -12,7 +12,7 @@ body{
     background-color: var(--background-color);
 }
 
-#content{
+#content {
     max-width: 1024px;
     background-color: white;
     margin: 0 auto;

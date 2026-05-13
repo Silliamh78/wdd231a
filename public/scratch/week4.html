@@ -10,6 +10,21 @@
     <p>This week, we will learn about JSON and how to use it in JavaScript</p>
 </body>
 <script>
-        
+        function getStudent(){
+            fetch("student.json").then(getStudentData).then(displayStudentData)
+        }
+        function getStudentData(response){
+            return response.json()
+        }
+        function displayStudentData(data){
+            console.log(data)
+        }
+
+        function getStudentCompact(){
+            fetch("./data/student.json")
+            .then(response => response.json())
+            .then(data => console.log(data))
+        }
+        getStudentCompact()
     </script>
 </html>

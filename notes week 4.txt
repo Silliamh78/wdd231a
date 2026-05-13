@@ -1,0 +1,71 @@
+JSON REVIEW *thank goodness*
+with some sprinklings of fetch API
+
+goals for this week:
+
+JSON and Fetch Basics
+Displaying Data
+API general setup on National Parks Site
+
+JSON stands for JavaScript Object Notation
+
+It describes data, and is native to javascript
+
+you can build foreign complicated objects in JavaScript!
+
+JSON key features:
+
+always starts with curly braces {}
+data is defined in elementary wars
+Data Types in JSON
+
+String: ""
+Number: number without quotes
+Boolean: true or false
+Array ["HTML", "CSS", "JavaScript"]
+Object: {"city": "", "state": }
+Null: null
+
+you can use math operators on strings, they just look different than you'll expect
+ex.
+let v= 20; let w= 30; v+w=50; let v= "20"; let w= "30"; v+w "2030"
+
+console tab on inspect lets you mess around with javascript on a web page
+
+EXAMPLES:
+
+JSON object within an object example:
+
+{"name": "Avery",
+"age":20,
+"isStudent":true,
+"gpa": 3.85,
+"skills": ["HTML", "CSS", "JavaScript"],
+"address":{
+"city": "Rexburg",
+"tate" "Idaho"
+},
+"middleName": null
+}
+
+null is put to avoid an undefined mark. let middleName= null; if there's nothing there (undefined is a response, but it's an error, null is a deliberate "nothing's there" rather than saying "uh-oh! no data found!" which is what undefined means)
+
+if you want foo to be null you have to set it (middleName.foo)
+
+if it's a list, you have to treat it like a list
+
+student.address.city fetches "Rexburg" from the above example
+
+FETCH NOTES:
+
+Fetch is how we request data from a file or server; it's native to JavaScript
+
+Here's how we utilize fetch;
+
+Request the File, Convert the Response, Use the Data
+
+Fetch utilizes a promise object which allows (asynchronous) processing
+
+http (hyper text transfer protocol)
+
+to get file from a server use GET /index.html

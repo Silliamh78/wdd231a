@@ -19,3 +19,9 @@ having an API Key and knowing how to access them as a web developer is important
 const apiKey=import.meta.env.VITE_NPS_API_KEY;
 
 REVIEW: https://byui.instructure.com/courses/411894/pages/w05-understanding-api-access-using-the-national-park-service-api
+
+THINGS TO TROUBLESHOOT: 
+site not updating still
+npm run start not working
+what do i do when I forget to name a push/commit
+just general problems understanding what I have and haven't done and where I need to catch up

@@ -1,0 +1,13 @@
+API ACCESS NOTES:
+
+plug in national park API on Friday wow
+
+API Key: HFe5ipBQyGWnWqBbfQWwaK1UyqhVC6q9TChdOZXr
+new things I learned:
+q allows you to search for specific words in the park data (it's a little quirky)
+sort is how the data comes back
+
+
+.env is how we keep track of files in our vs code
+
+const apiKey=import.meta.env.VITE_NPS_API_KEY;

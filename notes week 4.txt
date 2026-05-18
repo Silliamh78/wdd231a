@@ -91,3 +91,23 @@ FORMAT JSON:
 
 // alt+shift+f will reformat json for you if it's all messy
 
+./ means start from where you are when looking for the folder
+
+steps:
+
+1. call fetch
+2. turn to promise
+3. call json to fetch that data (which itself was a promise)
+4. log it out
+
+you could also use async ("await")
+
+async function load
+
+async stands for asynchronous which means two objects that don't happen at the same time
+await is what we use to pause the function so it doesn't run until we are ready for it.
+because of this, an async function won't do anything until it's called.
+As a web developer, this is super helpful because it means I can make functions that don't have to run right away!
+It also allows us to repeat this function as many times as we need it.
+We use this this week to bring up a menu on our site.
+It also allows us to create html elements.

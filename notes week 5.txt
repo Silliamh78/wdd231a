@@ -1,0 +1,27 @@
+API ACCESS NOTES:
+
+plug in national park API on Friday wow
+
+API Key: HFe5ipBQyGWnWqBbfQWwaK1UyqhVC6q9TChdOZXr
+new things I learned:
+q allows you to search for specific words in the park data (it's a little quirky)
+sort is how the data comes back
+Key Value Pairs come at the end of a const url, tells the key which parts of the api you want to access
+
+url=`${url}&api_key=${apiKey}`;
+
+the & adds a second part of the api to access
+
+having an API Key and knowing how to access them as a web developer is important because this is a very solid complex outside source of information. This is how we display pretty much any info that we don't want to generate ourselves.
+
+.env is how we keep track of files in our vs code
+
+const apiKey=import.meta.env.VITE_NPS_API_KEY;
+
+REVIEW: https://byui.instructure.com/courses/411894/pages/w05-understanding-api-access-using-the-national-park-service-api
+
+THINGS TO TROUBLESHOOT: 
+site not updating still
+npm run start not working
+what do i do when I forget to name a push/commit
+just general problems understanding what I have and haven't done and where I need to catch up

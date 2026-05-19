@@ -87,3 +87,43 @@ MODALS
 A modal forces you to pay attention, and you have to close it. like a pop up, or alert that covers the whole screen. you can usually dismiss it with an x. esc or clikcing outside the modal also usually works. This was all new knowledge for me! I've seen modals before but never knew what they were called. You structure a modal with a header, a main section that features the content of the page. There's a div for the modal itself, which fills the whole screen, inside of the div is the box. we set all the stylization stuff in styles using the tag on the html index. when an overlay is hidden so is the child. These are the main things I learned from the lecture/experimenting with the format/the reading. This is really cool because it's another way of organizing and prioritizing information on your site. Opening a modal can communicate what the most important thing for a user to see when they open the site may be, or be good for advertising new features!
 
 List the hidden feature above the style stuff that defines the features of the modal, so those features don't override the hidden feature
+
+260508-5253-4819-0000
+
+PS C:\Users\willi\OneDrive\Desktop\wdd231a\wdd231a> git add .
+PS C:\Users\willi\OneDrive\Desktop\wdd231a\wdd231a> git commit -m 'fixing styles'
+[main 5884133] fixing styles
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+PS C:\Users\willi\OneDrive\Desktop\wdd231a\wdd231a> git fetch
+From https://github.com/Silliamh78/wdd231a
+ * [new branch]      dev        -> origin/dev
+PS C:\Users\willi\OneDrive\Desktop\wdd231a\wdd231a> git checkout dev
+branch 'dev' set up to track 'origin/dev'.
+Switched to a new branch 'dev'
+PS C:\Users\willi\OneDrive\Desktop\wdd231a\wdd231a> git status
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+nothing to commit, working tree clean
+PS C:\Users\willi\OneDrive\Desktop\wdd231a\wdd231a> git add .
+PS C:\Users\willi\OneDrive\Desktop\wdd231a\wdd231a> git commit -m 'test'
+[dev 3be9e82] test
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\willi\OneDrive\Desktop\wdd231a\wdd231a> git push origin dev
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 390 bytes | 195.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/Silliamh78/wdd231a.git
+   d2fd8f7..3be9e82  dev -> dev
+PS C:\Users\willi\OneDrive\Desktop\wdd231a\wdd231a> git fetch
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 879 bytes | 125.00 KiB/s, done.
+From https://github.com/Silliamh78/wdd231a
+   d2fd8f7..d3b2b46  main       -> origin/main
+PS C:\Users\willi\OneDrive\Desktop\wdd231a\wdd231a> 

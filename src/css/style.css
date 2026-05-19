@@ -17,7 +17,9 @@ body{
     background-color: white;
     margin: 0 auto;
 }
-
+#hero-img {
+  width: 100%;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -41,12 +43,11 @@ header{
     font-size: 40px;
 }
 
-#park-menu{
+#park-menu ul{
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   list-style: none;
-  margin: 1rem;
+  width: 100%;
 }
 
 footer {

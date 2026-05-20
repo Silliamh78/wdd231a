@@ -47,7 +47,6 @@ header{
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 100%;
 }
 
 footer {
@@ -155,4 +154,8 @@ background-color: var(--header-color);
   background-color: white;
   cursor: pointer;
   margin-bottom: 0.5rem;
+}
+
+#park-menu svg{
+  width: 30px;
 }

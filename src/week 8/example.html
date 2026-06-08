@@ -5,19 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transitions and Animations</title>
     <style>
-        #demo1{
+        #demo1, #demo2{
             width: 800px;
             border: 3px solid black;
+            display: flex;
+            justify-content: center;
         }
 
         #box1{
             height: 200px;
             width: 200px;
             background-color: red;
+            transition: background-color 0.5s ease;
         }
 
-        #box1.hover{
+        #box1:hover{
             background-color: blue;
+        }
+
+        #box2{
+            height: 200px;
+            width: 200px;
+            border-radius: 20px;
+            background-color: red;
+            animation: red-to-blue .5s linear;
+        }
+
+         #box2:hover{
+            background-color: blue;
+        }
+
+        @keyframes red-to-blue{
+            0%{
+                background-color:red;
+            }
+            25%{
+                background-color: darkred;
+            }
+            50%{
+                background-color: black;
+            }
+            75%{
+                background-color: darkblue;
+            }
+            100%{
+                background-color: blue
+            }
         }
     </style>
 </head>
@@ -25,6 +58,10 @@
     <h1>Demo 1</h1>
     <div id="demo1">
         <div id="box1"></div>
+    </div>
+     <h1>Demo 2</h1>
+    <div id="demo2">
+        <div id="box2"></div>
     </div>
 </body>
 </html>

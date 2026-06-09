@@ -1,0 +1,30 @@
+Main.js
+Api.js
+Storage.js
+Render.js
+
+we're gonna take the big file, and break it into little files; making it easier to use moving forward
+
+api.js
+
+export async function getPark(parkCode){
+	const response= await
+fetch (`https://...&parkCode=${parkCode}`);
+	const data= await response.json(){
+	
+	return data.data[0];
+}
+
+const city = user?.address?.city;
+
+if user or address doesn't exist, JavaScript will return an undefined (null?) instead of throwing an error
+
+undefined will show up in the display (but not stop execution). There is still a problem it just doesn't suspend execution (Which is a good thing)
+
+NULLISH COALESCING:
+
+const username= user.name ?? "Guest";
+
+provide a default value for when a value becomes null
+
+Linters make big deals about things that are not big deals, but understanding what they are saying is half the battle

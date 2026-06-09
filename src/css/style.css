@@ -47,7 +47,6 @@ header{
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 100%;
 }
 
 footer {
@@ -155,4 +154,129 @@ background-color: var(--header-color);
   background-color: white;
   cursor: pointer;
   margin-bottom: 0.5rem;
+}
+
+#park-menu svg{
+  width: 30px;
+}
+
+#park-info,
+#park-fees {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+#park-info h2,
+#park-info h3,
+#park-fees h2,
+#park-fees h3 {
+  margin: 0 0 0.5rem;
+}
+
+#park-info p,
+#park-fees p {
+  margin: 0.35rem 0;
+  line-height: 1.4;
+}
+
+#park-info ul,
+#park-fees ul {
+  margin: 0.25rem 0 0.75rem 1.1rem;
+  padding: 0;
+}
+
+#park-info li,
+#park-fees li {
+  margin: 0.25rem 0;
+}
+
+#park-info a,
+#park-fees a {
+  margin-left: 0.35rem;
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+#choose-park-container {
+  display: flex;
+  flex-direction: column;   /* stack button and select */
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: 0.5rem 0 0.75rem;
+}
+
+#choose-park-btn {
+  cursor: pointer;
+  font: inherit;                     /* match site typography */
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: white;
+  background-color: var(--header-color);
+  border: 1px solid #1f2f27;
+  border-radius: 6px;
+  padding: 0.5rem 0.85rem;
+}
+
+#choose-park-btn:hover {
+  background-color: #2b4035;
+}
+
+#choose-park-btn:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+#choose-park-select {
+  min-width: 220px;
+  max-width: 100%;
+  padding: 0.4rem 0.5rem;
+  font: inherit;                     /* match site typography */
+  color: #1f2f27;
+  border: 1px solid #9ca59a;
+  border-radius: 4px;
+  background: #fff;
+}
+
+#favorites-section {
+  background-color: var(--header-color);
+  color: white;
+  padding: 0.5rem 1rem 0.9rem;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+#favorites-section a,
+#favorites-section .favorite-remove {
+  color: white;
+}
+
+.favorites-inner h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.favorites-list {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.favorites-list li {
+  margin: 0.15rem 0;
+}
+
+.favorite-remove {
+  margin-left: 0.4rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: inherit;
+  text-decoration: underline;
+}
+
+.is-hidden {
+  display: none !important;
 }

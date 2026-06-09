@@ -1,0 +1,52 @@
+URL stuff:
+
+if we don't specify the method it uses get
+
+when we submit it submits the form back to us so we can receive the query parameters
+
+once the rurl is updated
+
+const params=new URLSearchParams (the built in way to do that)
+
+URLSearchParams(window.location.search)
+
+this automatically searches for the = and &, separating them into key value pairs
+
+URL needs & to be a special character, that's the separator between the keys and the value
+
+something like %26 is sometimes used in place of an &
+
++ is used in place of a space (or %20)
+
+google url escape characters
+
+LOCAL STORAGE NOTES:
+
+a place to store keys and values (like in URLs, kind of)
+
+Key needs to be a string; value needs to be a string as well
+
+PEOPLE CAN ACCESS IT AND CHANGE STUFF; DON'T PUT CREDENTIALS IN LOCAL STORAGE EVER!!! 
+
+DON'T STORE LIST OF PRIVELEGES, DISCOUNT PERCENTAGE, ETC.
+
+BE CAREFUL WHEN YOU USE LOCAL STORAGE, NOT TO PUT IMPORTANT STUFF IN THERE
+
+local storage is mostly used for storing user preferences- button colors (red v green), how many times users have visited site
+
+for data you want to access quickly (that isn't super private)
+
+ex code
+
+<script>
+	const params = new URLSearchParams(window.location.search)
+	const tune= params.get("tune")
+	const listobj= document.getElementById("favorites-list")
+	const favoriteTunes = []
+	if (tune){
+	favoriteTunes.push(tune)
+	localStorage.setItem("favorite-tunes", JSON.stringifyfavoriteTunes))
+	}
+	listItems = favoriteTunes.map(tune => `<li>${tune}</li>`).join("")
+	listobj.innerHTML = listItems
+</script>

@@ -1,0 +1,13 @@
+oh no! Lint broke the file?
+
+Lint troubleshootin (N/A)
+
+movement styles in animation:
+"ease" starts fast but ends slow (sort of the default-- arguably looks best for sites like this)
+ease in out- slow then quick then slow
+linear is at one pace
+
+UX/UI notes;
+
+UX PRINCIPLES OF DESIGN:
+

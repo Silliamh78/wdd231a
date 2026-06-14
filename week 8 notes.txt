@@ -11,3 +11,8 @@ UX/UI notes;
 
 UX PRINCIPLES OF DESIGN:
 
+the embracement of AI in my field is really icking me out... its working for me unfortunately but it's just... is my job about to become obsolete? and do I even mind? like do I even want to do all this work? What I care about is the design of it. The way it looks. My creativity, etc. etc. etc.
+
+and I'm very familiar with and comfortable with adobe features because the art classes on this campus have served me well and prepared me to design and create; but the coding stuff-- I'm about to graduate and I don't know how to code! I don't! Part of that is on my lack of interest for sure but a lot of that is on the fact that the FACULTY at this university have become almost entirely reliant upon ai in a way that I feel is reflective of where the industry is heading; and also is forcing ME to become reliant on AI to pass any of my classes or "learn" the material. I don't want my career to be as an "ai supervisor"; I have no interest in that. At the very least the artistic industries are pushing back against AI (though somewhat unsuccessfully) it's exhausting to be at least partially in an industry that is fully embracing and sees no problem in it; because it means whether I like it or not, I will HAVE to work with it in a professional setting at SOME point. 
+
+UX stands for user experience. It's partially about aesthetics, but it's also largely about how efficiently the user on the site is able to get what they need to done. Buttons and workability need to be organized in a way where people can quickly and efficiently find what they are looking for.

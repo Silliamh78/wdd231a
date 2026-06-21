@@ -343,6 +343,10 @@ background-color: var(--header-color);
 
 #header-menu-trigger {
   transition: transform var(--motion-fast) var(--motion-ease), opacity var(--motion-fast) var(--motion-ease);
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  padding: .5rem;
 }
 
 #header-menu-trigger:hover,

@@ -22,6 +22,13 @@ function buildParkUrl(parkCode) {
   return `${window.location.pathname}?park=${parkCode}`;
 }
 
+if (menuTrigger && menuOptions) {
+  menuTrigger.addEventListener("click", () => {
+    menuOptions.classList.toggle("is-hidden");
+    const isOpen = menuOptions.classList.contains("is-hidden");
+    setMenuState(!isOpen, menuTrigger, menuOptions);
+  });
+
 async function init() {
   const activeParkCode = getParkCodeFromQuery();
 
@@ -31,10 +38,15 @@ async function init() {
 
   const park = await fetchParkData(activeParkCode);
   renderParkData(park);
-
+  function setMenuState(isOpen, menuTrigger, menuOptions) {
+  menuTrigger.setAttribute("aria-expanded", String(isOpen));
+  menuOptions.setAttribute("aria-hidden", String(!isOpen));
+  }
   setActiveSection("info");
   wireSectionMenus();
   setupMapModalAndPromotions();
+
+  setParkImage(park, parkImage);
 
   const parks = await fetchParkSelectorData();
   renderFavorites(buildParkUrl);

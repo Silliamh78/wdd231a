@@ -114,6 +114,11 @@ function resolveMenuIdFromClickTarget(target) {
   return li?.dataset?.menuId?.trim()?.toLowerCase() ?? "";
 }
 
+function setMenuState(isOpen, menuTrigger, menuOptions) {
+  menuTrigger.setAttribute("aria-expanded", String(isOpen));
+  menuOptions.setAttribute("aria-hidden", String(!isOpen));
+}
+
 export function wireSectionMenus() {
   const menuTrigger = document.querySelector("#header-menu-trigger");
   const menuOptions = document.querySelector("#header-menu-options");
@@ -121,21 +126,25 @@ export function wireSectionMenus() {
   const overview = document.querySelector("#overview");
 
   if (menuTrigger && menuOptions) {
-    menuTrigger.addEventListener("click", () => {
-      menuOptions.classList.toggle("is-hidden");
-    });
 
-    const isOpen = menuOptions.classList.contains("is-hidden");
-    setMenuState(!isOpen, menuTrigger, menuOptions);
-  };
+  // Set initial ARIA state
+  const isOpen = !menuOptions.classList.contains("is-hidden");
+  setMenuState(isOpen, menuTrigger, menuOptions);
 
+  menuTrigger.addEventListener("click", () => {
+    menuOptions.classList.toggle("is-hidden");
 
-    menuOptions.addEventListener("click", (event) => {
-      const menuId = resolveMenuIdFromClickTarget(event.target);
-      if (menuId === "info") setActiveSection("info");
-      if (menuId === "fees") setActiveSection("fees");
-    });
-  }
+    const isOpen = !menuOptions.classList.contains("is-hidden");
+    setMenuState(isOpen, menuTrigger, menuOptions);
+  });
+
+  menuOptions.addEventListener("click", (event) => {
+    const menuId = resolveMenuIdFromClickTarget(event.target);
+
+    if (menuId === "info") setActiveSection("info");
+    if (menuId === "fees") setActiveSection("fees");
+  });
+}
 
   if (parkMenu) {
     parkMenu.addEventListener("click", (event) => {

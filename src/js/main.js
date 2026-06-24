@@ -21,14 +21,6 @@ function getParkCodeFromQuery(defaultParkCode = DEFAULT_PARK_CODE) {
 function buildParkUrl(parkCode) {
   return `${window.location.pathname}?park=${parkCode}`;
 }
-
-if (menuTrigger && menuOptions) {
-  menuTrigger.addEventListener("click", () => {
-    menuOptions.classList.toggle("is-hidden");
-    const isOpen = menuOptions.classList.contains("is-hidden");
-    setMenuState(!isOpen, menuTrigger, menuOptions);
-  });
-
 async function init() {
   const activeParkCode = getParkCodeFromQuery();
 
@@ -45,8 +37,6 @@ async function init() {
   setActiveSection("info");
   wireSectionMenus();
   setupMapModalAndPromotions();
-
-  setParkImage(park, parkImage);
 
   const parks = await fetchParkSelectorData();
   renderFavorites(buildParkUrl);
